@@ -59,8 +59,7 @@ def get_llama_response(user_query, closest_pages):
     """
     complete_prompt = prompt_template + user_query
     response = ollama.chat(
-        model="tinyllama",
-        # model = " llama3.2",
+        model = " llama3.2",
         messages=[
             {
                 "role": "system",

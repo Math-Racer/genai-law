@@ -3,7 +3,7 @@ from logic import query_chromadb, get_llama_response
 import webbrowser  # Import webbrowser globally
 
 st.title("AI-Powered FIR Section Finder")
-st.write("< describe the app architecture > ")
+st.write("This app uses an advanced language model (LLaMA 3.2) and a comprehensive knowledge graph (vector database) to accurately generate act and section details.")
 
 query = st.text_input("Describe the incident in detail:")
 
@@ -31,6 +31,3 @@ if st.button("Find Relevant Sections"):
   # Add a button to navigate to another website, shown only after response
   if response:
     st.markdown("[Go draft the FIR](http://127.0.0.1:5000/?act1=IPC&section1=219&act2=IPC&section2=375)", unsafe_allow_html=True)
-    # if st.button("Go to Website"):
-    #   url = "http://127.0.0.1:5000/?act1=IPC&section1=219&act2=IPC&section2=375"
-    #   webbrowser.open(url)
