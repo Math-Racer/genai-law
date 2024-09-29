@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIR Form</title>
+</head>
+<body>
+    <h1>First Information Report (FIR)</h1>
+    <form action="/submit-fir" method="POST">
+        <label>District:</label>
+        <input type="text" name="district"><br><br>
+
+        <label>Police Station (P.S):</label>
+        <input type="text" name="ps"><br><br>
+
+        <label>Year:</label>
+        <input type="text" name="year"><br><br>
+
+        <label>F.I.R No.:</label>
+        <input type="text" name="firNo"><br><br>
+
+        <label>Date:</label>
+        <input type="date" name="date"><br><br>
+
+        <label>Act 1:</label>
+        <input type="text" name="act1" value="{{ act1 }}"><br><br>
+
+        <label>Section 1:</label>
+        <input type="text" name="section1" value="{{ section1 }}"><br><br>
+
+        <label>Act 2:</label>
+        <input type="text" name="act2" value="{{ act2 }}"><br><br>
+
+        <label>Section 2:</label>
+        <input type="text" name="section2" value="{{ section2 }}"><br><br>
+
+        <label>Act 3:</label>
+        <input type="text" name="act3" value="{{ act3 }}"><br><br>
+
+        <label>Section 3:</label>
+        <input type="text" name="section3" value="{{ section3 }}"><br><br>
+
+        <label>Complainant Name:</label>
+        <input type="text" name="complainant_name"><br><br>
+
+        <label>Father’s / Husband’s Name:</label>
+        <input type="text" name="father_name"><br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob"><br><br>
+
+        <label>Nationality:</label>
+        <input type="text" name="nationality"><br><br>
+
+        <label>Passport No.:</label>
+        <input type="text" name="passport_no"><br><br>
+
+        <label>Occupation:</label>
+        <input type="text" name="occupation"><br><br>
+
+        <label>Address:</label>
+        <input type="text" name="address"><br><br>
+
+        <input type="submit" value="Submit FIR">
+    </form>
+</body>
+</html>

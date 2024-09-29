@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIR PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .value {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>First Information Report (FIR)</h1>
+
+<div class="section">
+    <span class="label">District:</span>
+    <span class="value">{{ data.district }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Police Station (P.S):</span>
+    <span class="value">{{ data.ps }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Year:</span>
+    <span class="value">{{ data.year }}</span>
+</div>
+
+<div class="section">
+    <span class="label">F.I.R No.:</span>
+    <span class="value">{{ data.firNo }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Date:</span>
+    <span class="value">{{ data.date }}</span>
+</div>
+
+<hr>
+
+<h2>Acts and Sections</h2>
+
+<div class="section">
+    <span class="label">Act 1:</span>
+    <span class="value">{{ data.act1 }}</span><br>
+    <span class="label">Section 1:</span>
+    <span class="value">{{ data.section1 }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Act 2:</span>
+    <span class="value">{{ data.act2 }}</span><br>
+    <span class="label">Section 2:</span>
+    <span class="value">{{ data.section2 }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Act 3:</span>
+    <span class="value">{{ data.act3 }}</span><br>
+    <span class="label">Section 3:</span>
+    <span class="value">{{ data.section3 }}</span>
+</div>
+
+<hr>
+
+<h2>Complainant Information</h2>
+
+<div class="section">
+    <span class="label">Complainant Name:</span>
+    <span class="value">{{ data.complainant_name }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Father’s / Husband’s Name:</span>
+    <span class="value">{{ data.father_name }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Date of Birth:</span>
+    <span class="value">{{ data.dob }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Nationality:</span>
+    <span class="value">{{ data.nationality }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Passport No.:</span>
+    <span class="value">{{ data.passport_no }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Occupation:</span>
+    <span class="value">{{ data.occupation }}</span>
+</div>
+
+<div class="section">
+    <span class="label">Address:</span>
+    <span class="value">{{ data.address }}</span>
+</div>
+
+<hr>
+
+<p><strong>Note:</strong> This document is generated based on the data submitted in the FIR form.</p>
+
+</body>
+</html>
